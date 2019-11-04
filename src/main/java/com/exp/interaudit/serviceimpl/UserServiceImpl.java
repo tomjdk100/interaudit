@@ -13,6 +13,7 @@ public class UserServiceImpl implements UserService {
     private UserMapper userMapper;
     @Override
     public UserBean loginIn(String name, String password) {
+        System.out.println("test commit");
             return userMapper.getInfo(name,password);
     }
 
