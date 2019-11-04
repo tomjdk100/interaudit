@@ -14,7 +14,8 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserBean loginIn(String name, String password) {
         System.out.println("test commit");
-            return userMapper.getInfo(name,password);
+        System.out.println("test dev");
+            return userMapper.getInfo( name,password);
     }
 
 
